@@ -1,4 +1,8 @@
 CarrotsToCarrots::Application.routes.draw do
+  get "users/index"
+
+  get "users/show"
+
   resources :lists, :users, :products, :suppliers
 
   root :to => "products#index"

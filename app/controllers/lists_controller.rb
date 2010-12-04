@@ -1,20 +1,9 @@
 class ListsController < ApplicationController
-  # GET /lists
-  # GET /lists.xml
-  def index
-    @lists = List.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @lists }
-    end
-  end
-
-  # GET /lists/1
-  # GET /lists/1.xml
   def show
     @list = List.find(params[:id])
-    
+    @products = Product.names
+        
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @list }

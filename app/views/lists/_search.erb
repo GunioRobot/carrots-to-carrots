@@ -1,0 +1,13 @@
+<script>
+	$(function() {
+		var availableProducts = <%= @products %>;
+		$( "#products" ).autocomplete({
+			source: availableProducts
+		});
+	});
+</script>
+
+<div class="ui-widget">
+	<label for="products">Products: </label>
+	<input id="products">
+</div>

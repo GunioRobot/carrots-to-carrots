@@ -1,10 +1,13 @@
-<p id="notice"><%= notice %></p>
+<%= render :partial => "search" %>
 
 <ul>
 	<% @list.products.each do |product| %>
-		<% product.offers.each do |offer| %>
-			<li><%= offer.supplier.name %>, <%= offer.price %></li>
-		<% end %>
+		<li><%= product.name %></li>
+		<ul>
+			<% product.offers.each do |offer| %>
+				<li><%= offer.supplier.name %>, <%= offer.price %></li>
+			<% end %>			
+		</ul>
 	<% end %>
 </ul>
 
