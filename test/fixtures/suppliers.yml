@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: MyString
+  name: MyString
+  lat: 9.99
+  lng: 9.99
+
+two:
+  type: MyString
+  name: MyString
+  lat: 9.99
+  lng: 9.99
