@@ -12,20 +12,6 @@
 
 ActiveRecord::Schema.define(:version => 20101204181642) do
 
-  create_table "list_products", :force => true do |t|
-    t.integer  "list_id"
-    t.integer  "product_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "listables", :force => true do |t|
-    t.integer  "list_id"
-    t.integer  "product_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "listings", :force => true do |t|
     t.integer  "list_id"
     t.integer  "product_id"
@@ -43,13 +29,6 @@ ActiveRecord::Schema.define(:version => 20101204181642) do
     t.integer  "product_id"
     t.integer  "supplier_id"
     t.float    "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "product_prices", :force => true do |t|
-    t.integer  "product_id"
-    t.integer  "supplier_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

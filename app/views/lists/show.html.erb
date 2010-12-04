@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= render :partial => "prices" %>
+
 <ul>
 	<% @list.products.each do |product| %>
 		<% product.offers.each do |offer| %>
